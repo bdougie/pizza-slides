@@ -1,0 +1,124 @@
+extends layout
+
+block content
+  .reveal
+    .slides
+      section.title-slide
+        h1 How to win friends and prove to people that you are a developer
+      section.light-slide
+        section
+          h2
+            | So you are learning to code...
+            br
+            .divider
+          h3.lightest.fragment How do you know when you are a developer?
+          br
+          p.fragment.accent You write code
+        section
+          p
+            br
+            img(data-src='/img/dog.gif', alt='dog-gif', style="opacity: .8; width: 12.8em; vertical-align: text-bottom;")
+          p.fragment
+            | ...learning to code is an uphill battle
+            br
+            span.tiny
+              | (however, it it gets easier with time)
+        section
+          p This talk is about branding yourself as a developer
+          ul.small
+            li.fragment Make yourself known
+            li.fragment Package your experience with examples
+            li.fragment Join the conversation
+          p.fragment.accent Stop what you are doing right now and
+        section
+          p.small
+            | 
+            br
+            img(data-src='/img/google-logo.png', alt='google-logo', style="opacity: .8; width: 16.8em; vertical-align: text-bottom;" )
+          p.fragment If I Google'd you what would I find?
+        section
+          p Hiring managers will probably Google you eventually.
+          br
+          p.frgement.accent So let's make it easier
+
+      section.title-slide
+        p.logo Netlify
+
+      section.light-slide
+        section
+          p
+            | netlify is a platform that integrates and automates all services needed to deploying and maintaining
+            span.accent  modern websites
+          ul.small
+            li.fragment Git-integrated
+            li.fragment Dynamic JavaScript
+            li.fragment Build tools: Webpack, Gulp, and Browserify
+            li.fragment APIs
+
+        section
+          p.center
+            br
+            img(data-src='/img/jamstack_logo.png', alt='jamstack', style="opacity: .8; width: 22.8em; vertical-align: text-bottom;")
+          p.fragment.center
+            | JavaScript, APIs, and Markup
+            br
+            span.accent (modern websites)
+      section.dark-slide
+        .num 01
+        h1 Make yourself known
+        p.subhead becuase you will be Google'd
+      section.dark-slide
+        .num 02
+        h1 Back it with facts and examples
+        p.subhead A chronicling of our origins
+      section.light-slide
+        q.lightest.fragement Find a 
+          a(href="http://choose.netlify.com/") template
+          and start writing
+        br
+        br
+        q.lightest.fragment more to come, but use the open source 
+          a(href="https://github.com/netlify/netlify-cms") Netlify CMS
+      section.dark-slide
+        .num 03
+        h1 Join the conversation
+        p.subhead and be friendly
+
+      section.title-slide
+        section
+          h1 Let's Talk
+          p
+            br
+            a(href="https://twitter.com/bdougieYO") @bdougieYO
+            br
+            br
+            a(href="mailto:brian@netlify.com") brian@netlify.com
+        section
+          h1 Links
+          p
+            br
+            a(href="https://github.com/netlify/netlify-cms") netlify-cms
+            br
+            br
+            a(href="http://speaking.io/") speaking.io
+  script(src='lib/js/head.min.js')
+  script(src='js/reveal.js')
+  script.
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+    transition: 'slide', // none/fade/slide/convex/concave/zoom
+    // More info https://github.com/hakimel/reveal.js#dependencies
+    dependencies: [
+    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+    { src: 'plugin/zoom-js/zoom.js', async: true },
+    { src: 'plugin/notes/notes.js', async: true }
+    ]
+    });
+
