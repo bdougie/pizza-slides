@@ -63,22 +63,87 @@ block content
             | JavaScript, APIs, and Markup
             br
             span.accent (modern websites)
+
+      // Point 1
       section.dark-slide
         .num 01
         h1 Make yourself known
         p.subhead becuase you will be Google'd
+
+      section.light-slide
+        h1 Make yourself known
+
+        section
+          img(data-src='http://femgineer.com/images/logos/github-logo.png', alt='google-logo',
+          style="opacity: .8; margin-top: 3em; vertical-align: text-bottom;" )
+
+        section
+          img(data-src='/img/bdougie-profile.png', alt='google-logo',
+          style="opacity: .8; margin-top: 3em; vertical-align: text-bottom;" )
+
+        section
+          h2 Be social
+          q.lightest.fragment What are your favorite projects you have used so far?
+
+        section.icons
+            img(data-src='https://vuejs.org/images/logo.png', alt='google-logo',
+            style="opacity: .8; margin-top: 3em; height: 5em; width: 5em; vertical-align: text-bottom;" )
+            img(data-src='http://daynin.github.io/clojurescript-presentation/img/react-logo.png', alt='google-logo',
+            style="opacity: .8; margin-top: 3em; height: 5em; width: 5em; vertical-align: text-bottom;" )
+            img(data-src='https://angular.io/resources/images/logos/angular2/angular.png', alt='google-logo',
+            style="opacity: .8; margin-top: 3em; height: 6em; width: 6em; vertical-align: text-bottom;" )
+
+
+        section
+          blockquote.twitter-tweet(data-lang='en')
+            p(lang='en', dir='ltr')
+              | write OSS they said.
+              br
+              | travel the world they said,
+              br
+              | meet exciting people they said. 
+              a(href='https://t.co/WzeUvfzlWE') pic.twitter.com/WzeUvfzlWE
+            | — Sam Saccone (@samccone)
+            a(href='https://twitter.com/samccone/status/682357780544532480') December 31, 2015
+          script(async='', src='//platform.twitter.com/widgets.js', charset='utf-8')
+
+        section
+          blockquote.twitter-tweet(data-lang='en')
+            p(lang='en', dir='ltr')
+              | Lots of hate in the world these days. Go out and 🌟 an Open Source repo you've used recently.
+            | — ThisIsNotNormal (@schneems)
+            a(href='https://twitter.com/schneems/status/811605803849445376') December 21, 2016
+          script(async='', src='//platform.twitter.com/widgets.js', charset='utf-8')
+        section
+          a(href='https://github.com/MunGell/awesome-for-beginners')
+            img(data-src='/img/getting-started-open-source.png', alt='google-logo',
+            style="opacity: .8; margin-top: 3em; vertical-align: text-bottom;" )
+
+        section
+          a(href='http://firstpr.me/')
+            img(data-src='/img/firstprme.png', alt='google-logo',
+            style="opacity: .8; margin-top: 3em; vertical-align: text-bottom;" )
+        section
+          a(href='https://github.com/netlify/netlify-cms')
+            img(data-src='https://pbs.twimg.com/profile_images/808428374641098752/SI6v7WoH.jpg', alt='google-logo',
+            style="opacity: .8; margin-top: 3em; vertical-align: text-bottom;" )
+
+      // Point 2
       section.dark-slide
         .num 02
         h1 Back it with facts and examples
         p.subhead A chronicling of our origins
+
       section.light-slide
-        q.lightest.fragement Find a 
+        q.lightest.fragement Find a
           a(href="http://choose.netlify.com/") template
           and start writing
         br
         br
-        q.lightest.fragment more to come, but use the open source 
+        q.lightest.fragment more to come, but use the open source
           a(href="https://github.com/netlify/netlify-cms") Netlify CMS
+
+      // Point 3
       section.dark-slide
         .num 03
         h1 Join the conversation
@@ -121,4 +186,3 @@ block content
     { src: 'plugin/notes/notes.js', async: true }
     ]
     });
-
